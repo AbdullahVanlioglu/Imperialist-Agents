@@ -1,0 +1,34 @@
+runtime:
+workspace_dir: "./workspace"
+max_steps: 12
+model: "noop" # switch to "openai:gpt-4o-mini" when providing API key
+
+
+planning:
+style: "react"
+verifier: "rule"
+
+
+memory:
+impl: "inmem"
+
+
+skills:
+- name: file.write
+- name: file.read
+- name: web.fetch
+
+
+connectors:
+email:
+impl: "imap"
+enabled: false
+params:
+host: ${IMAP_HOST}
+username: ${IMAP_USER}
+password: ${IMAP_PASS}
+db:
+impl: "sqlite"
+enabled: true
+params:
+url: "sqlite:///./workspace/agent.db"
