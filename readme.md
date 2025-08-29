@@ -1,4 +1,4 @@
-# Imperialist-Agetns
+# Imperialist-Agents
 > :warning: Under Development
 
 <p align="center">
