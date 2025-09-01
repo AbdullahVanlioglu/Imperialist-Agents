@@ -1,13 +1,13 @@
 from __future__ import annotations
 from typing import Dict, Any
-from manus_style_agent.core.registry import Registries
+from imperialist_agents.core.registry import Registries
 
 class Connector:
     async def setup(self, **kwargs): ...
 
 # EMAIL / DB loader factories (adapter pattern)
-from manus_style_agent.connectors.email.imap_adapter import IMAPEmail
-from manus_style_agent.connectors.db.sqlite_adapter import SQLiteDB
+from imperialist_agents.connectors.email.imap_adapter import IMAPEmail
+from imperialist_agents.connectors.db.sqlite_adapter import SQLiteDB
 
 def load_connectors(cfg: Dict[str, Any]):
     out: Dict[str, Any] = {}

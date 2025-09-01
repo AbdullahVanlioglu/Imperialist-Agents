@@ -1,11 +1,11 @@
 from __future__ import annotations
 from typing import List
-from manus_style_agent.core.types import Message, ToolCall
-from manus_style_agent.core.models import ModelProvider
-from manus_style_agent.core.execution import Executor
-from manus_style_agent.core.memory import Memory
-from manus_style_agent.core.verifier import load_verifier
-from manus_style_agent.core.prompts import SYSTEM_BASE, PLAN_PROMPT
+from imperialist_agents.core.types import Message, ToolCall
+from imperialist_agents.core.models import ModelProvider
+from imperialist_agents.core.execution import Executor
+from imperialist_agents.core.memory import Memory
+from imperialist_agents.core.verifier import load_verifier
+from imperialist_agents.core.prompts import SYSTEM_BASE, PLAN_PROMPT
 
 class Planner:
     async def run(self, goal: str) -> str: ...
