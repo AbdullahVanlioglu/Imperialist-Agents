@@ -1,7 +1,7 @@
 import asyncio
 import typer
 from rich.console import Console
-from imperialist_agents.run_demo import run_task
+from imperialist_agents.crun_demo import run_task
 
 
 app = typer.Typer(add_completion=False)
